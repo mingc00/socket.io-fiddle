@@ -6,3 +6,7 @@ socket.on('connect', onConnect);
 function onConnect(){
   console.log('connect ' + socket.id);
 }
+
+socket.on('reconnect', function() {
+	socket.emit('test', 'client reconnect');
+});

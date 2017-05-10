@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 io.on('connect', onConnect);
 
-var AUTH_DELAY = 0;
+var AUTH_DELAY = 500;
 
 function mockAuth(callback) {
 	setTimeout(function() {
